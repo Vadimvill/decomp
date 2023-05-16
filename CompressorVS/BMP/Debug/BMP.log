@@ -1,5 +1,0 @@
-﻿  Source.c
-C:\Users\botme\source\repos\BMP\BMP\Source.c(56,35): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
-  bmp.c
-  Создание кода...
-  BMP.vcxproj -> C:\Users\botme\source\repos\BMP\Debug\BMP.exe
