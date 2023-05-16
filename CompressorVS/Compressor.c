@@ -2,7 +2,7 @@
 #include "stdlib.h"
 #include "Compressor.h"
 #include "string.h"
-int push(struct Stack* stack, char* data) {
+int push(struct Stack* stack,const char* data) {
     if (stack == NULL) {
         return -1;
     }
