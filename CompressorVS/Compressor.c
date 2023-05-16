@@ -7,7 +7,9 @@ int push(struct Stack* stack, char* data) {
         return -1;
     }
     struct Node* newNode = malloc(sizeof(Node));
-    newNode->name = data;
+    char* newData = malloc(sizeof(char) * strlen(data) + 1);
+    strcpy(newData, data);
+    newNode->name = newData;
     newNode->next = stack->top;
     stack->top = newNode;
     return 1;
@@ -284,11 +286,9 @@ void countWordsWithStack(const char* string, struct Stack* stack)
         if (isWord(lexem)) {
             push(stack, lexem);
         }
-        else {
-            free(lexem);
-        }
+        free(lexem);
     }
-    free(string);
+   
 } 
 
 
@@ -302,6 +302,7 @@ void textToStack(struct Stack* stack) {
 
     while ((string = calloc(2048, sizeof(char))) != NULL && fgets(string, 2048, file) != NULL) {
         countWordsWithStack(string, stack);
+        free(string);
     }
 
     if (ferror(file) != 0)

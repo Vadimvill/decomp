@@ -1,7 +1,8 @@
 ﻿cl : командная строка warning D9025: переопределение "/sdl" на "/GS-"
   Compressor.c
-C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(29,33): warning C4028: формальный параметр 1 отличается от объявления
-C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(58,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(129,9): warning C4068: неизвестная прагма "SonarLint"
-C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(133,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(31,33): warning C4028: формальный параметр 1 отличается от объявления
+C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(60,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(136,21): warning C4047: функция: "char *" отличается по уровням косвенного обращения от "char (*)[100]"
+C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(136,12): warning C4024: strcpy: различные типы для формального и фактического параметров 1
+C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\CompressorVS\Compressor.c(134,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
   CompressorVS.vcxproj -> C:\Users\botme\OneDrive\Рабочий стол\Archivator\CompressorVS\x64\Debug\CompressorVS.exe
