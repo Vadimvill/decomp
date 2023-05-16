@@ -1,1 +1,1 @@
-
+msbuild CompressorVS\CompressorVS.vcxproj
