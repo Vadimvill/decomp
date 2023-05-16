@@ -130,10 +130,12 @@ char isLetter(char c)
 char isWord(const char* lexem) {
     if (lexem == NULL) return 0;
     int length = strlen(lexem);
+    char newlexem[100];
+    strcpy(&newlexem, lexem);
     int i = 0;
     if (length != 0) {
         while (i < length) {
-            if (!isLetter(lexem[i])) {
+            if (!isLetter(newlexem[i])) {
                 return 0;
             }
             i++;
