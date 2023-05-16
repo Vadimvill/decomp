@@ -288,7 +288,8 @@ void countWordsWithStack(const char* string, struct Stack* stack)
             free(lexem);
         }
     }
-} //NOSONAR
+    free(string);
+} 
 
 
 
@@ -301,7 +302,6 @@ void textToStack(struct Stack* stack) {
 
     while ((string = calloc(2048, sizeof(char))) != NULL && fgets(string, 2048, file) != NULL) {
         countWordsWithStack(string, stack);
-        free(string);
     }
 
     if (ferror(file) != 0)
